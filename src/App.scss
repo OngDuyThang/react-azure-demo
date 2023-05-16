@@ -1,0 +1,48 @@
+.appContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    h2 {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    input {
+        width: calc(100% - 32px);
+        border: 1px solid #ccc;
+
+        &:focus {
+            outline: none;
+        }
+
+        padding: 16px;
+        font-size: 16px;
+    }
+
+    span {
+        color: red;
+        font-size: 22px;
+    }
+
+    .btn {
+        width: 150px;
+        padding: 16px;
+        background-color: rgb(135, 219, 135);
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        cursor: pointer;
+    }
+}
