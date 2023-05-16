@@ -8,7 +8,7 @@ export default function App() {
   const [res, setRes] = useState()
   async function submit() {
     try {
-      const res = await axios.get('https://ongduythangspring.azurewebsites.net/login', { userName, password })
+      const res = await axios.post('https://ongduythangspring.azurewebsites.net/login', { userName, password })
       setRes(res.data)
     } catch (err) {
       console.log('Login failure!')
